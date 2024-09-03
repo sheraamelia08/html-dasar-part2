@@ -1,1 +1,45 @@
-# html-dasar-part2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Hadir</title>
+</head>
+
+<body>
+    <h2>Daftar Hadir</h2>
+    <form action="/upload" method="post">
+        <label for="nama"> Nama : </label>
+        <input type="text" name="nama" id="nama">
+        <br>
+        <label for="keterangan"> Keterangan </label>
+        <input type="radio" id="hadir" name="keterangan" value="hadir">
+        <label for="hadir">Hadir</label>
+        <input type="radio" id="tidak_hadir" name="keterangan" value="tidak_hadir">
+        <label for="tidak_hadir">Tidak Hadir</label>
+        <br>
+        <input type="submit" name="submit" value="tambah" />
+    </form>
+    <br>
+
+    <table border="1" cellpadding="5" cellspacing="0" width="15%" heigth="50px">
+        <tr>
+            <th rowspan="2"> No </th>
+            <th rowspan="2"> nama </th>
+            <th colspan="2"> keterangan </th>
+        </tr>
+        <tr>
+            <th>Hadir</th>
+            <th>Tidak Hadir</th>
+        </tr>
+        <tr>
+            <td> 1 </td>
+            <td> Alfin </td>
+            <td> 100% </td>
+            <td> 0% </td>
+        </tr>
+    </table>
+</body>
+
+</html>
